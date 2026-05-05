@@ -79,24 +79,24 @@ export default function AgencyBehind() {
   return (
     <section
       ref={sectionRef}
-      className="py-20 md:py-28 text-black overflow-hidden"
+      className="pt-6 relative xl:pt-12 text-black overflow-hidden flex"
     >
       {/* Heading */}
-      <div className="max-w-[1400px] mx-auto px-6 lg:px-12 mb-14">
+      <div className="max-w-[1400px] mx-auto  lg:px-12 mb-14 relative z-20">
         <h2
           ref={headingRef}
-          className="text-3xl md:text-4xl lg:text-5xl font-bold"
+       className='text-sm text-wrap'
         >
-          Agency Behind
+         The agency behind...
         </h2>
       </div>
 
       {/* Marquee */}
-      <div className="relative">
+      <div className="">
 
         {/* LEFT fade: subtle blur → strong blur, masks the marquee behind heading area */}
         <div
-          className="absolute inset-y-0 left-0 z-10 w-48 pointer-events-none"
+          className="absolute inset-y-0 left-0 z-10 w-96 pointer-events-none"
           style={{
             background: 'linear-gradient(to right, white 0%, rgba(255,255,255,0.85) 40%, rgba(255,255,255,0) 100%)',
             backdropFilter: 'blur(0px)',

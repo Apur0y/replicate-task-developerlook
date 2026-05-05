@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import AnimatedButton from '../AnimatedButton';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -51,29 +52,26 @@ export default function AboutUs() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-24 md:py-32 bg-white">
-      <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
-        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+    <section ref={sectionRef} className="  mx-4 py-12 xl:py-24">
+      <div className="">
+        <div className="grid lg:grid-cols-2 gap-24 justify-between">
           <div ref={textRef} className="space-y-6 opacity-0">
-            <p className="text-lg md:text-xl lg:text-2xl text-gray-600 leading-relaxed">
-              We're a digital marketing agency that doesn't do boring.
-              Since 2019, we've been helping brands dominate search results
-              and drive actual business growth through strategic SEO and
-              content marketing.
+            <p className="text-lg md:text-xl lg:text-2xl text-gray-600 max-w-xl">
+              A global team of search-first content marketers <br /> engineering semantic relevancy & category <br /> signals for both the internet and people
             </p>
-            <p className="text-lg md:text-xl lg:text-2xl text-gray-600 leading-relaxed">
-              No jargon. No fluff. Just results that matter.
-            </p>
+           
           </div>
 
           <div ref={headingRef} className="space-y-8 opacity-0">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
-              We're not your
+            <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-medium">
+             Driving Demand &
               <br />
-              <span className="italic bg-gradient-to-r from-gray-900 via-gray-700 to-gray-900 bg-clip-text text-transparent">
-                typical agency
+              <span >
+                Discovery
               </span>
             </h2>
+
+            <AnimatedButton variant="solid" >Our Story</AnimatedButton>
 
             <div className="flex flex-wrap gap-4">
               <button className="px-8 py-4 bg-black text-white rounded-full font-medium overflow-hidden relative group transition-all duration-300 hover:scale-105 hover:shadow-xl">

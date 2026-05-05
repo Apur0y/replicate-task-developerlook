@@ -17,7 +17,7 @@ import SendBrief from './components/home/SendBrief';
 export default function App() {
   return (
     
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-slate-100">
       <SmoothScroll>
       <CustomCursor />
       <AnnouncementBar />

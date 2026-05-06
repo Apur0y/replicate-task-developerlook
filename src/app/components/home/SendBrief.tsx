@@ -54,6 +54,7 @@ export default function SendBrief() {
     <section
       ref={sectionRef}
       id="brief"
+      className="text-black"
       onMouseEnter={handleEnter}
       onMouseLeave={handleLeave}
       style={{
@@ -74,7 +75,6 @@ export default function SendBrief() {
               fontSize: "clamp(56px, 9vw, 120px)",
               fontWeight: 900,
               letterSpacing: "-0.04em",
-              color: "transparent",
               WebkitTextStroke: "1px rgba(255,255,255,0.25)",
               whiteSpace: "nowrap",
               paddingRight: "60px",
